@@ -16,6 +16,11 @@ public class ThemeParkRideController {
     public ThemeParkRideController(ThemeParkRideRepository themeParkRideRepository) {
         this.themeParkRideRepository = themeParkRideRepository;
     }
+    
+    @GetMapping(value = "/hello")
+    public String hello() {
+        return "hello";
+    }
 
     @GetMapping(value = "/ride", produces = MediaType.APPLICATION_JSON_VALUE)
     public Iterable<ThemeParkRide> getRides() {
