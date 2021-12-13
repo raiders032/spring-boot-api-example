@@ -19,7 +19,7 @@ public class ThemeParkRideController {
     
     @GetMapping(value = "/hello")
     public String hello() {
-        return "hello2";
+        return "hello3";
     }
 
     @GetMapping(value = "/ride", produces = MediaType.APPLICATION_JSON_VALUE)
